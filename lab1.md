@@ -8,7 +8,7 @@ With a directory as an argument
 
 With a file path as an argument
 
-![Image](cd_examples.png)
+![Image](cd examples.png)
 
 ---
 > **Examples of using *ls***
