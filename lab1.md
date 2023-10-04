@@ -1,7 +1,7 @@
 ---
 ## Lab Report 1: Remote Access and Filesystems
 ---
-# Examples of using *cd*
+# Examples of using ~cd~
 
 ![Image](cd_examples.png)
 
@@ -20,12 +20,12 @@ There was no error
 > With a file as an argument
 
 The working directory was /lecture1 when the command was run
-The output says that the given argument is not a directory thus it cannot perform the command cd
-This was an error as you cannot pass files as an argument for cd
+The output says that the given argument is not a directory thus it cannot perform the command
+This was an error as you cannot pass files as an argument for ~cd~
 
 ---
 
-# Examples of using *ls*
+# Examples of using ~ls~
 
 ![Image](ls_examples.png)
 
@@ -49,7 +49,7 @@ There was no error
 
 ---
 
-# Examples of using *cat*
+# Examples of using ~cat~
 
 ![Image](cat_noarg.png)
 
