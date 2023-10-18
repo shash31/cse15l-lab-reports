@@ -8,15 +8,15 @@
 
 > Code for `StringServer.java`
 
-![Image](addmsg1)
+![Image](addmsg1.png)
 
-![Image](addmsg2)
+![Image](addmsg2.png)
 
 > /add-message requests
 
 The handleRequest method is called when the /add-message request is sent to the server with the entire url as the argument.
-The method then checks whether the query is /add-message with a parameter of s and then adds the given string to the class variable `text`.
-Thus the site then shows the string added to the previous messages along with the numbers.
+The method then checks whether the query is /add-message with a parameter of s and then adds the given string to the class variable `text` and increments the class variable `n` by 1.
+Thus the site then shows the string added to the previous messages along with the incremented number.
 
 ---
 
