@@ -32,9 +32,13 @@ Thus the site then shows the new string added to the previous messages along wit
 
 ![Image](privatekeyonlocal.png)
 
+![Image](privatekeypath.png)
+
 >The path to the private key for my SSH key for logging into ieng6 on my local computer
 
 ![Image](publickeyonieng6.png)
+
+![Image](publickeypath.png)
 
 >The path to the public key for my SSH key for logging into ieng6 within my ieng6 account
 
