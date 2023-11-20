@@ -82,14 +82,14 @@ read the entire input file before starting, so with large input files it starts 
 
 1) Option 1
 
-`` 
+`-E` 
 
 **Example 1:**
 
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -E 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -137,7 +137,7 @@ Boarding the Flights
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -E 911report/chapter-2.txt
 ```
 
 *Output:*
@@ -148,20 +148,20 @@ less 911report/chapter-1.txt
 
 
 *Source:*
-[Link]()
+[Link](https://phoenixnap.com/kb/less-command-in-linux)
 
 ---
 
 2) Option 2
 
-`` 
+`-N` 
 
 **Example 1:**
 
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -N 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -177,7 +177,7 @@ less 911report/chapter-1.txt
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -N 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -189,20 +189,20 @@ less 911report/chapter-1.txt
 
 
 *Source:*
-[Link]()
+[Link](https://www.geeksforgeeks.org/less-command-linux-examples/)
 
 ---
 
 3) Option 3
 
-``
+`-X`
 
 **Example 1:**
 
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -X 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -217,7 +217,7 @@ less 911report/chapter-1.txt
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -X 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -227,20 +227,20 @@ less 911report/chapter-1.txt
 ```
 
 *Source:*
-[Link]()
+[Link](https://phoenixnap.com/kb/less-command-in-linux)
 
 ---
 
 4) Option 4
 
-``
+`-p`
 
 **Example 1:**
 
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -p  911report/chapter-1.txt
 ```
 
 *Output:*
@@ -248,9 +248,6 @@ less 911report/chapter-1.txt
 ```
 
 ```
-
-*Source*:
-[Link]()
 
 
 
@@ -260,7 +257,7 @@ less 911report/chapter-1.txt
 *Command:*
 
 ```
-less 911report/chapter-1.txt
+less -p  911report/chapter-1.txt
 ```
 
 *Output:*
@@ -269,5 +266,7 @@ less 911report/chapter-1.txt
 
 ```
 
+
+
 *Source*:
-[Link]()
+[Link](https://www.geeksforgeeks.org/less-command-linux-examples/)
