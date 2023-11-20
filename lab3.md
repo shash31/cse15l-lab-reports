@@ -9,33 +9,33 @@
 
 ```  
 // should change the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
+        arr[i] = arr[arr.length - i - 1];
     }
-  }
+}
 ```
 
 > Failure-inducing input
 
 ```
-	@Test 
-	public void testReverseInPlace() {
+@Test 
+public void testReverseInPlace() {
     int[] input1 = {1, 2, 3, 4, 5};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
-	}
+}
 ```
 
 > Non failure-inducing input
 
 ```
-	@Test 
-	public void testReverseInPlace() {
+@Test 
+public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}
+}
 ```
 
 > Symptom
@@ -48,22 +48,22 @@
 > Bug
 
 ```
-  static void reverseInPlace(int[] arr) {
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
+        arr[i] = arr[arr.length - i - 1];
     }
-  }
+}
 ```
 
 ```
-  static void reverseInPlace(int[] arr) {
+static void reverseInPlace(int[] arr) {
     int p;
     for(int i = 0; i < arr.length/2; i += 1) {
-      p = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = p;
+        p = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = p;
     }
-  }
+}
 ```
 
 The approach in the original function was incorrect as it couldn't replace the values of the second half of the array with the ones from the first half.
@@ -78,18 +78,18 @@ The second correct function only loops through half of the array and uses the pl
 `less` is a command which allows backward movement in the file as well as forward movement.  Also, less does not have to
 read the entire input file before starting, so with large input files it starts up faster than other text editors.
 
-> 4 alternatives
+> 4 interesting options with less 
 
-1) Alternative 1
+1) Option 1
 
-`more` 
+`` 
 
 **Example 1:**
 
 *Command:*
 
 ```
-more 911report/chapter-1.txt
+less 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -129,7 +129,7 @@ Boarding the Flights
     911report/chapter-1.txt
 ```
 
-more is the older version of less. It works almost the same as less but has limited backward navigation in comparison. Unlike less, you also cannot go to the start and the end of the file with more.
+
 
 **Example 2:**
 
@@ -137,78 +137,72 @@ more is the older version of less. It works almost the same as less but has limi
 *Command:*
 
 ```
-more 911report/chapter-2.txt
+less 911report/chapter-1.txt
 ```
 
 *Output:*
 
 ```
-THE FOUNDATION OF THE NEW TERRORISM
-            A DECLARATION OF WAR
-            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
-                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
-                newspaper in London to publish what they termed a fatwa issued in the name of a
-                "World Islamic Front." A fatwa is normally an interpretation of Islamic law by a
-                respected Islamic authority, but neither Bin Ladin, Zawahiri, nor the three others
-                who signed this statement were scholars of Islamic law. Claiming that America had
-                declared war against God and his messenger, they called for the murder of any
-                American, anywhere on earth, as the "individual duty for every Muslim who can do it
-                in any country in which it is possible to do it."
-            
-            Three months later, when interviewed in Afghanistan by ABC-TV, Bin Ladin enlarged on
-                these themes.
-            
-            He claimed it was more important for Muslims to kill Americans than to kill other
-                infidels." It is far better for anyone to kill a single American soldier than to
-                squander his efforts on other activities," he said. Asked whether he approved of
-                terrorism and of attacks on civilians, he replied:"We believe that the worst thieves
-                in the world today and the worst terrorists are the Americans. Nothing could stop
-                you except perhaps retaliation in kind. We do not have to differentiate between
-                military or civilian. As far as we are concerned, they are all targets." Note:
-                Islamic names often do not follow the Western practice of the consistent use of
-                surnames. Given the variety of names we mention, we chose to refer to individuals by
-                the last word in the names by which they are known: Nawaf al Hazmi as Hazmi, for
-                instance, omitting the article "al" that would be part of their name in their own
-                societies. We generally make an exception for the more familiar English usage of
-                "Bin" as part of a last name, as in Bin Ladin. Further, there is no universally
-                accepted way to transliterate Arabic words and names into English. We have relied on
-                a mix of common sense, the sound of the name in Arabic, and common usage in source
-                materials, the press, or government documents. When we quote from a source document,
-                we use its transliteration, e.g.,"al Qida" instead of al Qaeda.
-            Though novel for its open endorsement of indiscriminate killing, Bin Ladin's 1998
-                declaration was only the latest in the long series of his public and private calls
-                since 1992 that singled out the United States for attack. In August 1996, Bin Ladin
-                had issued his own self-styled fatwa calling on Muslims to drive American soldiers
-                out of Saudi Arabia. The long, disjointed document condemned the Saudi monarchy for
-                allowing the presence of an army of infidels in a land with the sites most sacred to
-                Islam, and celebrated recent suicide bombings of American military facilities in the
-                Kingdom. It praised the 1983 suicide bombing in Beirut that killed 241 U.S. Marines,
-                the 1992 bombing in Aden, and especially the 1993 firefight in Somalia after which
-                the United States "left the area carrying disappointment, humiliation, defeat and
-                your dead with you."
-            
-            Bin Ladin said in his ABC interview that he and his followers had been preparing in
-                Somalia for another long struggle, like that against the Soviets in Afghanistan, but
-                "the United States rushed out of Somalia in shame and disgrace." Citing the Soviet
-911report/chapter-2.txt
+
 ```
-more performs the same way here as it did in the first example. 
+
 
 *Source:*
-https://www.baeldung.com/linux/more-less-most-commands#:~:text=more%20and%20less%20have%20the,files%20with%20the%20same%20options.
+[Link]()
 
 ---
 
-2) Alternative 2
+2) Option 2
 
-`vim` 
+`` 
 
 **Example 1:**
 
 *Command:*
 
 ```
-vim 911report/chapter-1.txt
+less 911report/chapter-1.txt
+```
+
+*Output:*
+
+```
+                                                                                                                    
+```
+
+
+
+**Example 2:**
+
+*Command:*
+
+```
+less 911report/chapter-1.txt
+```
+
+*Output:*
+
+```
+
+```
+
+
+
+*Source:*
+[Link]()
+
+---
+
+3) Option 3
+
+``
+
+**Example 1:**
+
+*Command:*
+
+```
+less 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -219,10 +213,11 @@ vim 911report/chapter-1.txt
 
 **Example 2:**
 
+
 *Command:*
 
 ```
-vim 911report/chapter-2.txt
+less 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -232,71 +227,20 @@ vim 911report/chapter-2.txt
 ```
 
 *Source:*
+[Link]()
 
 ---
 
-3) Alternative 3
+4) Option 4
 
-`vi`
+``
 
 **Example 1:**
 
 *Command:*
 
 ```
-vi 911report/chapter-1.txt
-```
-
-*Output:*
-
-```
-
-```
-
-**Example 2:**
-
-
-*Command:*
-
-```
-vi 911report/chapter-2.txt
-```
-
-*Output:*
-
-```
-
-```
-
-*Source:*
-
-
----
-
-4) Alternative 4
-
-`cat`
-
-**Example 1:**
-
-*Command:*
-
-```
-cat 911report/chapter-1.txt
-```
-
-*Output:*
-
-```
-
-```
-
-**Example 2:**
-
-*Command:*
-
-```
-cat 911report/chapter-2.txt
+less 911report/chapter-1.txt
 ```
 
 *Output:*
@@ -306,5 +250,24 @@ cat 911report/chapter-2.txt
 ```
 
 *Source*:
+[Link]()
 
 
+
+**Example 2:**
+
+
+*Command:*
+
+```
+less 911report/chapter-1.txt
+```
+
+*Output:*
+
+```
+
+```
+
+*Source*:
+[Link]()
