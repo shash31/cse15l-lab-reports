@@ -148,7 +148,7 @@ less -E 911report/chapter-2.txt
 
 
 *Source:*
-[Link](https://phoenixnap.com/kb/less-command-in-linux)
+[(https://phoenixnap.com/kb/less-command-in-linux)](https://phoenixnap.com/kb/less-command-in-linux)
 
 ---
 
@@ -189,7 +189,7 @@ less -N 911report/chapter-1.txt
 
 
 *Source:*
-[Link](https://www.geeksforgeeks.org/less-command-linux-examples/)
+[https://www.geeksforgeeks.org/less-command-linux-examples/](https://www.geeksforgeeks.org/less-command-linux-examples/)
 
 ---
 
@@ -227,7 +227,7 @@ less -X 911report/chapter-1.txt
 ```
 
 *Source:*
-[Link](https://phoenixnap.com/kb/less-command-in-linux)
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux)
 
 ---
 
@@ -269,4 +269,4 @@ less -p  911report/chapter-1.txt
 
 
 *Source*:
-[Link](https://www.geeksforgeeks.org/less-command-linux-examples/)
+[https://www.geeksforgeeks.org/less-command-linux-examples/](https://www.geeksforgeeks.org/less-command-linux-examples/)
