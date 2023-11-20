@@ -148,7 +148,7 @@ less -E 911report/chapter-2.txt
 
 
 *Source:*
-[(https://phoenixnap.com/kb/less-command-in-linux)](https://phoenixnap.com/kb/less-command-in-linux)
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux)
 
 ---
 
