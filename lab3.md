@@ -7,36 +7,36 @@
 
 > Function in question
 
-`  
+```  
 // should change the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
   }
-`
+```
 
 > Failure-inducing input
 
-`
+```
 	@Test 
 	public void testReverseInPlace() {
     int[] input1 = {1, 2, 3, 4, 5};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
 	}
-`
+```
 
 > Non failure-inducing input
 
-`
+```
 	@Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
-`
+```
 
 > Symptom
 
@@ -47,15 +47,15 @@
 
 > Bug
 
-`
+```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
   }
-`
+```
 
-`
+```
   static void reverseInPlace(int[] arr) {
     int p;
     for(int i = 0; i < arr.length/2; i += 1) {
@@ -64,7 +64,7 @@
       arr[arr.length - i - 1] = p;
     }
   }
-`
+```
 
 The approach in the original function was incorrect as it couldn't replace the values of the second half of the array with the ones from the first half.
 We require a placeholder variable to hold the value of the elements in the first half in order to swap the values of both halves of the array.
@@ -88,13 +88,13 @@ read the entire input file before starting, so with large input files it starts 
 
 *Command:*
 
-`
+```
 more 911report/chapter-1.txt
-`
+```
 
 *Output:*
 
-`
+```
 WE HAVE SOME PLANES
 
     Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.
@@ -127,7 +127,7 @@ Boarding the Flights
 
     While Atta had been selected by CAPPS in Portland, three members of his hijacking team-Suqami, Wail al Shehri, and Waleed al Shehri-were selected in B
     911report/chapter-1.txt
-`
+```
 
 more is the older version of less. It works almost the same as less but has limited backward navigation in comparison. Unlike less, you also cannot go to the start and the end of the file with more.
 
@@ -136,13 +136,13 @@ more is the older version of less. It works almost the same as less but has limi
 
 *Command:*
 
-`
+```
 more 911report/chapter-2.txt
-`
+```
 
 *Output:*
 
-`
+```
 THE FOUNDATION OF THE NEW TERRORISM
             A DECLARATION OF WAR
             In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
@@ -191,7 +191,7 @@ THE FOUNDATION OF THE NEW TERRORISM
                 Somalia for another long struggle, like that against the Soviets in Afghanistan, but
                 "the United States rushed out of Somalia in shame and disgrace." Citing the Soviet
 911report/chapter-2.txt
-`
+```
 more performs the same way here as it did in the first example. 
 
 *Source:*
@@ -207,29 +207,29 @@ https://www.baeldung.com/linux/more-less-most-commands#:~:text=more%20and%20less
 
 *Command:*
 
-`
+```
 vim 911report/chapter-1.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 **Example 2:**
 
 *Command:*
 
-`
+```
 vim 911report/chapter-2.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 *Source:*
 
@@ -243,30 +243,30 @@ vim 911report/chapter-2.txt
 
 *Command:*
 
-`
+```
 vi 911report/chapter-1.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 **Example 2:**
 
 
 *Command:*
 
-`
+```
 vi 911report/chapter-2.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 *Source:*
 
@@ -281,29 +281,29 @@ vi 911report/chapter-2.txt
 
 *Command:*
 
-`
+```
 cat 911report/chapter-1.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 **Example 2:**
 
 *Command:*
 
-`
+```
 cat 911report/chapter-2.txt
-`
+```
 
 *Output:*
 
-`
+```
 
-`
+```
 
 *Source*:
 
