@@ -1,17 +1,45 @@
-
----
-# Lab Report 5: Putting it all together
----
-
-
-## Part 1: Debugging Scenario
-
+## Lab Report 5: Putting it all together
 
 ---
 
-## Part 2: Reflection
+> Part 1: Debugging Scenario
 
-Learning how to set up an SSH key for your github account was a fun and helpful experience. 
-Being able to work on github projects on your local computer and then being able to update your work online from the terminal itself is very interesting and can definitely be very productive.
-I also enjoyed learning about branches and pull requests on github. It helped give me a much better idea about how coding projects in groups can work on github. 
-I asked questions about these in my lab and my TA helped me a lot with understanding these concepts.
+---
+
+# Edstem post
+
+Student debugging question:
+
+**What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
+
+I am using VSCode on mac
+
+**Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
+
+I got the error cannot find symbol and arrows showing the parts that caused the errors. The output I got is 
+
+Screenshot:
+
+
+**Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
+
+I put in the command javac StringServer.java to compile the file while i am in /Users/cibylin directory. 
+
+TA Response:
+
+Student answer:
+
+File & Directory structure: list-examples-grader/grade.sh
+The contents of each file before fixing the bug
+Commands: bash grade.sh https://github.com/ucsd-cse15l-s23/list-methods-corrected
+A description of what to edit to fix the bug
+
+
+---
+
+> Part 2: Reflection
+
+---
+
+In the second half of the quarter, I really enjoyed learning getting more practice with bash and making an autograder script.
+It helped me understand what happens behind the scenes of autograder a little more which I really appreciated.
